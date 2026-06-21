@@ -43,12 +43,6 @@ This app solves the UX challenge of booking cinema tickets by providing an intui
 2. **Matrix Rendering Grid**: Loops structurally through multidimensional seat collections. Individual blocks retain unique index addresses to toggle conditional CSS class toggles (`.seat.selected` or `.seat.occupied`).
 3. **Billing Computation**: Implements pure variable reduction logic to parse arrays of active selections instantly against pricing configurations.
 
----
-
-## 🚀 Getting Started
-
-Follow these steps to run this application locally on your computer.
-
 ### Installation & Execution Guide
 
 1. **Clone the repository:**
