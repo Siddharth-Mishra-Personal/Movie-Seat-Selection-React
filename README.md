@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# 🎬 Movie Seat Selection App (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![React Version](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)](https://react.dev/)
+[![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white)](https://www.w3.org/TR/CSS3/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Available Scripts
+A slick, highly interactive movie theater ticket booking interface built from scratch using React. The application provides smooth, real-time feedback as users toggle seats, switch movies, and view localized ticketing breakdowns.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📌 Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This app solves the UX challenge of booking cinema tickets by providing an intuitive, instantaneous layout grid. It allows users to pick a movie title, view varying tier pricing options, dynamically interact with occupied/available grids, and watch their total billing scale instantly.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<Image src="image_agent_tag_16335073890713347044" alt="Interactive layout grid interface displaying seats for theater selection" caption="Conceptual interactive seating layout grid interface" />
 
-### `npm test`
+### 🚀 Key Features
+*   **Dynamic Matrix Grid**: An interactive room arrangement showing Available, Selected, and Pre-Occupied seats.
+*   **Contextual Reactive State**: Switching movies automatically recalculates prices based on the selected criteria without discarding the current room configuration layout.
+*   **Live Metadata Counters**: Keeps accurate real-time inventory counts and total pricing matrices visible down to the millisecond.
+*   **Fully Responsive Flexbox Styles**: Adapts seamlessly to standard widescreen monitors, tablets, and smartphones.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack & Architecture
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*   **Frontend Library**: React (Functional Components & Hooks)
+*   **State Management**: Native React `useState` and `useEffect` paradigms
+*   **Styling Engine**: Modular semantic Vanilla CSS3 (utilizing Flexbox, CSS Grid matrices, and 3D skew animations for the digital screen illusion)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Component Design Lifecycle
 
-### `npm run eject`
+[App.js (Global State Root)]
+├── [MovieSelector Component] (Updates Unit Price)
+├── [CinemaShowcase Component] (Static Legend Indicators)
+└── [TheaterMatrix Component] (Renders Interactive Seat Grids)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Movie Selection Handling**: Captures state changes when users switch titles, updating the underlying unit value ($10, $12, $15, etc.).
+2. **Matrix Rendering Grid**: Loops structurally through multidimensional seat collections. Individual blocks retain unique index addresses to toggle conditional CSS class toggles (`.seat.selected` or `.seat.occupied`).
+3. **Billing Computation**: Implements pure variable reduction logic to parse arrays of active selections instantly against pricing configurations.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Getting Started
 
-## Learn More
+Follow these steps to run this application locally on your computer.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installation & Execution Guide
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository:**
+```bash
+   git clone [https://github.com/Siddharth-Mishra-Personal/Movie-Seat-Selection-React.git](https://github.com/Siddharth-Mishra-Personal/Movie-Seat-Selection-React.git)
+   cd Movie-Seat-Selection-React
